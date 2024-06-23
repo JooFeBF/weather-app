@@ -310,17 +310,17 @@ async function initMap() {
   const exampleWeather = {
     time: "2024-06-23T12:45",
     interval: 900,
-    temperature_2m: 15.5,
-    relative_humidity_2m: 70,
-    apparent_temperature: 14.8,
-    wind_speed_10m: 5,
+    temperature_2m: 'TBD',
+    relative_humidity_2m: 'TBD',
+    apparent_temperature: 'TBD', 
+    wind_speed_10m: 'TBD',
     is_day: 1,
     weather_code: 0
   };
 
   weatherImage.src = WMO_CODES[exampleWeather.weather_code].day.image;
   weatherImage.alt = WMO_CODES[exampleWeather.weather_code].day.description;
-  weatherStatus.textContent = WMO_CODES[exampleWeather.weather_code].day.description;
+  weatherStatus.textContent = 'TBD';
   placeLocation.textContent = 'Start searching!';
   temperature.textContent = exampleWeather.temperature_2m;
   humidity.textContent = exampleWeather.relative_humidity_2m;
